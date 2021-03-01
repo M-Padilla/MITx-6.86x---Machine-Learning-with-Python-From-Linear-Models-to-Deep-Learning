@@ -32,5 +32,5 @@ def perceptron(x,y,epochs):
                 #Increases/decreases the offset (determined by the label y[i]).
                 theta[-1] += y[i]                                   
     
-    return (theta)          
+    return theta       
   
