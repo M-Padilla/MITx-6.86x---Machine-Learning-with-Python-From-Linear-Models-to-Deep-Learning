@@ -28,23 +28,9 @@ def perceptron(x,y,epochs):
                 '''
                 #Nudges the theta parameters in the same/opposite direction
                 #(determined by the label y[i]) of the feature row vector.
-                theta[[0,1]] += y[i]*x[i]
+                theta[:-1] += y[i]*x[i]
                 #Increases/decreases the offset (determined by the label y[i]).
-                theta[2] += y[i]                                   
+                theta[-1] += y[i]                                   
     
-    return (theta)
-
-
-
-x = np.array([[-4, 2],
-                [-2,1],
-                [-1,-1],
-                [2,2],
-                [1,-2]])
-
-y = np.array([1, 1, -1, -1, -1])
-
-print(perceptron(x,y,2))
-
-            
+    return (theta)          
   
