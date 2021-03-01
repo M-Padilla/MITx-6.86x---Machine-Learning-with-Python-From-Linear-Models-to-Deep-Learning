@@ -30,17 +30,3 @@ def perceptron_no_offset(x,y,epochs):
                 #(determined by y) of the feature row vector. 
                 theta += y[i]*x[i]                           
     return (theta)
-
-
-'''
-x = np.array([[-1,-1],
-                [1,0],
-                [-1,1.5]])
-
-y = np.array([1, -1, 1])
-'''
-
-print(perceptron(x,y,500))
-
-            
-  
