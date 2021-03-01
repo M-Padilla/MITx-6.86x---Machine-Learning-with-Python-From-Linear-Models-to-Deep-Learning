@@ -29,4 +29,4 @@ def perceptron_no_offset(x,y,epochs):
                 #Nudges the theta parameters in the same/opposite direction
                 #(determined by y) of the feature row vector. 
                 theta += y[i]*x[i]                           
-    return (theta)
+    return theta
